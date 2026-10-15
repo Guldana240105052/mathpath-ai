@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personalized math practice with Foundation, Standard, and Advanced levels.">
+  <title>MathPath AI — Differentiated Math Practice</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="MathPath AI home"><span class="brand-mark">∑</span><span>MathPath <b>AI</b></span></a>
+    <span class="top-note">Differentiated learning · Mathematics</span>
+  </header>
+
+  <main class="layout">
+    <section class="hero">
+      <p class="eyebrow">YOUR LEARNING, YOUR PACE</p>
+      <h1>One topic.<br><span>Three ways to grow.</span></h1>
+      <p class="hero-copy">Practice linear equations with support that adapts to your level. Choose a path, get a fresh problem, and ask for guidance whenever you need it.</p>
+      <div class="hero-pills"><span>✦ AI-powered hints</span><span>↗ Step-by-step solutions</span><span>✓ Instant feedback</span></div>
+    </section>
+
+    <section class="workspace" aria-label="Math practice app">
+      <div class="section-head">
+        <div><p class="eyebrow">01 / CHOOSE YOUR PATH</p><h2>How would you like to practice?</h2></div>
+        <span class="topic-tag">Topic: Linear equations</span>
+      </div>
+
+      <div class="level-grid" role="group" aria-label="Difficulty level">
+        <button class="level-card selected" data-level="foundation" type="button" aria-pressed="true">
+          <span class="level-icon">🌱</span><span class="level-name">Foundation</span><span class="level-desc">Guided steps, simple numbers, direct hints.</span><span class="level-foot">BUILD CONFIDENCE <span>↗</span></span>
+        </button>
+        <button class="level-card" data-level="standard" type="button" aria-pressed="false">
+          <span class="level-icon">✦</span><span class="level-name">Standard</span><span class="level-desc">Grade-level problems with independent practice.</span><span class="level-foot">PRACTISE SKILLS <span>↗</span></span>
+        </button>
+        <button class="level-card" data-level="advanced" type="button" aria-pressed="false">
+          <span class="level-icon">🚀</span><span class="level-name">Advanced</span><span class="level-desc">Multi-step challenges and real-world reasoning.</span><span class="level-foot">PUSH FURTHER <span>↗</span></span>
+        </button>
+      </div>
+
+      <div class="problem-panel">
+        <div class="panel-title"><div><p class="eyebrow">02 / YOUR CHALLENGE</p><h2 id="problemTitle">Ready when you are</h2></div><span id="levelBadge" class="badge">FOUNDATION</span></div>
+        <p id="problemText" class="problem-text">Choose a level and generate your first problem to begin.</p>
+        <div class="answer-row">
+          <label class="sr-only" for="answerInput">Your answer or working</label>
+          <input id="answerInput" type="text" placeholder="Type your answer or working…" autocomplete="off">
+          <button id="checkBtn" class="button button-dark" type="button">Check answer <span>→</span></button>
+        </div>
+        <div class="action-row">
+          <button id="newBtn" class="button button-primary" type="button">＋ New problem</button>
+          <button id="hintBtn" class="button button-light" type="button">☼ Get a hint</button>
+          <button id="solutionBtn" class="button button-light" type="button">View solution</button>
+        </div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+        <div id="responseBox" class="response-box hidden" aria-live="polite">
+          <div class="response-heading"><span class="response-spark">✦</span><h3 id="responseTitle">Your guidance</h3></div>
+          <p id="responseText"></p>
+        </div>
+        <p class="fine-print">AI-generated practice can make mistakes. Use the explanation to learn, and verify important results with your teacher or textbook.</p>
+      </div>
+    </section>
+    <footer><span>MathPath AI</span><span>Learn at your level. Grow at your pace.</span></footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

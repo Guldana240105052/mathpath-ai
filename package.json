@@ -1,0 +1,13 @@
+{
+  "name": "web-based-ai-math-differentiator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-assisted differentiated math practice across three levels.",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^39.2.0"
+  }
+}
